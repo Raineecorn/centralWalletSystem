@@ -9,8 +9,7 @@ const getBalance = async (req, res) => {
     try {
         const user = await db.readDB(); 
         res.status(statusCodes.OK).json({
-            name: user,
-            balance: user.balance
+            "Status" : user
         });
     }catch(error){
         res.status(statusCodes.NOT_FOUND).json({
