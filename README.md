@@ -61,12 +61,21 @@ Authenticate user.
 **Success Response:**
 ```json
 {
-  "message": "Login successful",
-  "links": [
-    { "name": "Dashboard", "url": "/dashboard" },
-    { "name": "Wallet", "url": "/wallet" },
-    { "name": "Logout", "url": "/logout" }
-  ]
+    "message": "Login successful",
+    "links": [
+        {
+            "name": "balance",
+            "url": "/balance"
+        },
+        {
+            "name": "Cash-in",
+            "url": "/cashin"
+        },
+        {
+            "name": "debit",
+            "url": "/debit"
+        }
+    ]
 }
 ```
 
