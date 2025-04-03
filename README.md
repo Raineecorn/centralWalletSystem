@@ -190,6 +190,6 @@ Withdraws funds from the wallet. Requires login.
 
 - **Unauthorized Access:**
 ```json
-{ "error" : "Unauthorized", "message": 'Please log in first using POST /auth/login with body: { "username": "user_name", "password": "user_password" }', }
+{ "error" : "Unauthorized", "message": 'Please log in first using POST /auth/login with body: { "username": "user_name", "password": "user_password" }' }
 ```
 
