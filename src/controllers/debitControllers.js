@@ -3,7 +3,9 @@ import { debitUser } from '../services/debitServices.js';
 import statusCodes from '../config/statusCodes.js';
 
 const getDebit = async (req, res) => {
-    res.send('debitt heree');
+    res.status(200).json({
+        message: 'To perform a debit, use POST /debit/username with body: { "amount": number }'
+    });
 }; 
 
 const getDebitUser = async (req, res) => {

@@ -2,7 +2,9 @@ import { cashInUser } from '../services/cashinServices.js';
 import statusCodes from '../config/statusCodes.js';
 
 const getCashIn = async (req, res) => {
-    res.send('cashin here!!'); 
+    res.status(200).json({
+        message: 'To perform a cashin, use POST /cashin/username with body: { "amount": number }'
+    });
 }; 
 
 const getCashInUser = async (req, res) => {
@@ -15,7 +17,7 @@ const getCashInUser = async (req, res) => {
              "name": user.name,
              "balance": user.balance
          });
-         
+
      }catch(error){
          res.status(error.StatusCode || statusCodes.BAD_REQUEST).json({
              error : error.message

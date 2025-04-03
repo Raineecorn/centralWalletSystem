@@ -2,7 +2,9 @@ import statusCodes from '../config/statusCodes.js';
 import db from '../models/db.js';
 
 const getBalanceStatus = async (req, res) => {
-    res.status(200).send('balance connection is OK'); 
+    res.status(200).json({
+        message: 'To perform a balance check, use GET /balance/username'
+    });
 };
 
 const getBalance = async (req, res) => {

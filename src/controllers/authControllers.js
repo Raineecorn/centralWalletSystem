@@ -13,9 +13,9 @@ const login = async (req, res) => {
       return res.status(statusCodes.OK).json({
         message: 'Login successful',
         links: [
-          { name: 'Dashboard', url: '/dashboard' },
-          { name: 'Wallet', url: '/wallet' },
-          { name: 'Logout', url: '/logout' }
+          { name: 'balance', url: '/balance' },
+          { name: 'Cash-in', url: '/cashin' },
+          { name: 'debit', url: '/debit' }
         ]
       });
     } else {
