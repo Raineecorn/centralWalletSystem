@@ -46,6 +46,8 @@ node app.js
 
 ## API Endpoints
 
+### LOGIN
+
 ### POST `/auth/login`
 
 Authenticate user.
@@ -85,6 +87,7 @@ Authenticate user.
 ```
 
 ---
+## BALANCE 
 
 ### GET `/balance/`
 
@@ -113,6 +116,8 @@ Returns current balance. Requires login.
 ```
 
 ---
+## CASH-IN
+
 ### GET `/cashin/`
 
 Precautions for cash-in, must be for user. Requires login.
@@ -143,6 +148,9 @@ Adds funds to the wallet. Requires login.
 ```
 
 ---
+
+## DEBIT 
+
 ### GET `/debit/`
 
 Precautions for debit/withdraw, must be for user. Requires login.
