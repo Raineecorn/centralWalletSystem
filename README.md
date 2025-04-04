@@ -7,7 +7,6 @@
 centralWalletSystem/
 │
 ├── app.js                # Application
-├── db.json               # Sample/mock database (not used T_T)
 ├── config/               # App config (e.g., status codes)
 ├── controllers/          # Handles business logic per route
 ├── models/               # Auth credential values
