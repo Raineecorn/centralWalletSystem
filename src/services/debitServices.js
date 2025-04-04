@@ -8,8 +8,9 @@ export const debitUser = async (amount) => {
     const data = await db.readDB(); 
     const user = data.user; 
 
-    if(!user) throw new AppError('User not found'); 
-    user.balance -= amount; 
+    walletBalance = user.balance; 
+
+    walletBalance -= amount; 
     await db.editDB({user}); 
     return user; 
 
